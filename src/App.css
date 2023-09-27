@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(114, 114, 248),
+    rgb(249, 246, 246)
+  );
+}
+
+h1 {
+  margin: 30px 0 30px 150px;
+  color: #090909;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 520px;
+  min-height: 550px;
+  text-align: center;
+  margin: 60px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  background-image: radial-gradient(rgb(115, 192, 243), rgb(19, 34, 78));
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #070707;
+  outline: none;
+  width: 78%;
+
+  color: #0c0c0c;
+}
+
+.todo-button {
+  padding: 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+
+  background: green;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+  transition: ease-in-out 0.5s;
+}
+
+.todo-text {
+  transition: ease-in-out 0.5s;
+  padding-right: 300px;
+  overflow: hidden;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: rgb(171, 236, 236);
+  background: rgb(4, 4, 35);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  transition: ease-in-out 0.5s;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  background-color: red;
+  margin-right: 5px;
+  color: #fffefe;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  background-color: white;
+  color: red;
+}
+
+.edit-icon {
+  background-color: yellow;
+  color: #0b0b0b;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-icon:hover {
+  background-color: #070707;
+  color: yellow;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-icon {
+  height: 30px;
+  width: 60px;
+  margin-left: 110px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.reset-icon:hover {
+  background-color: rgb(254, 249, 249);
+  color: red;
+  transition: ease-in-out 0.5s;
+}
